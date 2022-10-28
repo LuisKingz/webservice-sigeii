@@ -1,0 +1,54 @@
+<?php
+
+namespace SisaBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Usuario
+ *
+ * @ORM\Table(name="usuario")
+ * @ORM\Entity
+ */
+class Usuario
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="idUsuario", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idusuario;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="usuario", type="string", length=50, nullable=true)
+     */
+    private $usuario = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="pass", type="string", length=50, nullable=true)
+     */
+    private $pass = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="claveIdentidad", type="string", length=50, nullable=true)
+     */
+    private $claveidentidad = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tipoUsuario", type="string", length=50, nullable=true)
+     */
+    private $tipousuario = 'NULL';
+
+
+}
+

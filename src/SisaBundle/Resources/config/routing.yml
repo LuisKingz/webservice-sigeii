@@ -1,0 +1,17 @@
+sisa_homepage:
+    path:     /
+    defaults: { _controller: SisaBundle:Default:index }
+    
+sisa_login:
+    path: /login
+    defaults: { _controller: SisaBundle:Default:login }
+
+sisa_docente:
+    path: /docente
+    defaults: { _controller: SisaBundle:Default:getDocente }
+
+sisa_alumno:
+    path: /alumno
+    defaults: { _controller: SisaBundle:Default:getAlumno }
+
+

@@ -1,0 +1,39 @@
+webservice_index:
+    path: /
+    defaults: { _controller: AppBundle:Default:index }
+    
+webservice_infoUser:
+    path: /infouser
+    defaults: { _controller: AppBundle:Default:getInfoUser }
+    
+webservice_siniestro:
+    path: /siniestro
+    defaults: { _controller: AppBundle:Default:getSiniestro }
+    
+webservice_createreport:
+    path: /createreport
+    defaults: { _controller: AppBundle:Default:createReport }
+
+webservice_getinfobuilding:
+    path: /infobuild
+    defaults: { _controller: AppBundle:Default:getInfoBuilding }
+    
+webservice_getbuild:
+    path: /build
+    defaults: { _controller: AppBundle:Default:getBuild }
+    
+webservice_incidencia:
+    path: /incidencia
+    defaults: { _controller: AppBundle:Default:getIncidencia }
+    
+webservice_inmueble:
+    path: /inmueble
+    defaults: { _controller: AppBundle:Default:getInmueble }
+    
+webservice_espacioFisico:
+    path: /espaciofisico
+    defaults: { _controller: AppBundle:Default:getEspacioFisico }
+    
+webservice_incidenciaInmueble:
+    path: /incidenciaInmueble
+    defaults: { _controller: AppBundle:Default:getIncidenciaInmueble}

@@ -1,0 +1,68 @@
+<?php
+
+namespace SisaBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Profesor
+ *
+ * @ORM\Table(name="profesor")
+ * @ORM\Entity
+ */
+class Profesor
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="idProfesor", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idprofesor;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nombre", type="string", length=50, nullable=true)
+     */
+    private $nombre = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="apellido_paterno", type="string", length=50, nullable=true)
+     */
+    private $apellidoPaterno = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="apellido_materno", type="string", length=50, nullable=true)
+     */
+    private $apellidoMaterno = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="puesto", type="string", length=50, nullable=true)
+     */
+    private $puesto = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="grupo", type="string", length=50, nullable=true)
+     */
+    private $grupo = 'NULL';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="divisionAcademica", type="string", length=100, nullable=true)
+     */
+    private $divisionacademica = 'NULL';
+
+
+}
+

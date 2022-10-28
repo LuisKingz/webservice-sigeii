@@ -1,0 +1,9 @@
+# MX
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?skychar.sigeii.tech$ [NC]
+RewriteCond %{REQUEST_URI} !^/sub-folder/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /web/$1
+RewriteCond %{HTTP_HOST} ^(www.)?skychar.sigeii.tech$ [NC]
+RewriteRule ^(/)?$ web/app.php [L]

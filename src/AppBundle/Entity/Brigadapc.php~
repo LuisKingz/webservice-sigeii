@@ -1,0 +1,43 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Brigadapc
+ *
+ * @ORM\Table(name="brigadapc", indexes={@ORM\Index(name="fk_BrigadaPC_Inmueble", columns={"Inmueble_idInmueble"})})
+ * @ORM\Entity
+ */
+class Brigadapc
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="idBrigadaPC", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $idbrigadapc;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tipo_b", type="string", length=40, nullable=false)
+     */
+    private $tipoB;
+
+    /**
+     * @var \Inmueble
+     *
+     * @ORM\ManyToOne(targetEntity="Inmueble")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="Inmueble_idInmueble", referencedColumnName="idInmueble")
+     * })
+     */
+    private $inmuebleinmueble;
+
+
+}
+

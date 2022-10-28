@@ -1,0 +1,7 @@
+sisa:
+    resource: "@SisaBundle/Resources/config/routing.yml"
+    prefix:   /sisa
+
+app:
+    resource: '@AppBundle/Resources/config/routing.yml'
+    prefix: /
